@@ -1,0 +1,48 @@
+.one{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-top: 0.3rem solid white;
+    border-right: 0.3rem solid white;
+    border-left: 0.3rem solid white;
+    animation: roteight 2s infinite ease;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes roteight {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.inner{
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.two{
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(255, 225, 56);
+    margin: 2rem;
+    animation: rotate 3s infinite ease;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.three{
+    width: 2rem;
+    height: 2rem;
+    border-top: 0.3rem solid white;
+    border-left: 0.3rem solid white;
+    border-right: 0.3rem solid white;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}

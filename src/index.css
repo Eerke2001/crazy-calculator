@@ -1,0 +1,289 @@
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #333333;
+  background-image: url("assets/img/desert.jpg"); */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0rem;
+}
+
+.hidden{
+  display: none;
+}
+
+.hall-bg{
+  background-color: #333333;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: -1;
+}
+
+.hall-main{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.hall-title{
+  color: white;
+  font-style: italic;
+}
+
+.p-creator{
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.p-creator-bold{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+  padding: 0rem;
+	width: 8rem;
+	height: 2rem;
+  border-radius: 0.6rem;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0rem;
+  border-radius: 0.6rem;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+  border-radius: 0.6rem;
+}
+
+.color-input{
+  outline: none;
+  -webkit-appearance: none;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.ghost-bg{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  bottom: 0rem;
+  right: 0rem;
+  z-index: -1;
+  /* background-color: #333333; */
+}
+
+.select-menu{
+  padding: 0.3rem 3rem 0.3rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.achtergrond-standard{
+  background-image: none;
+  background-color: #333333;
+}
+
+.achtergrond-desert{
+  background-image: url("assets/img/desert.jpg");
+  background-size: cover;
+}
+
+.achtergrond-space{
+  background-image: url("assets/img/space.jpg");
+  background-size: cover;
+}
+
+.achtergrond-jungle{
+  background-image: url("assets/img/jungle.jpg");
+  background-size: cover;
+}
+
+.achtergrond-art{
+  background-image: url("assets/img/art.jpg");
+  background-size: cover;
+}
+
+.achtergrond-glitter{
+  background-image: url("assets/img/glitter.jpg");
+  background-size: cover;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.hall-grid-images{
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  background-color: #333333;
+}
+
+.surround__pat--img{
+  padding: 1rem;
+  background-color: white;
+  width: 34rem;
+  border-radius: 1rem;
+  margin: 1.2rem;
+}
+
+.pat--img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.pat-two-img{
+  background-image: url("assets/img/pat-two.jpg");
+}
+
+.pat-three-img{
+  background-image: url("assets/img/pat-three.jpg");
+}
+
+.pat-four-img{
+  background-image: url("assets/img/pat-four.jpg");
+}
+
+.pat-five-img{
+  background-image: url("assets/img/pat-five.jpg");
+}
+
+.pat-six-img{
+  background-image: url("assets/img/pat-six.jpg");
+}
+
+.pat-seven-img{
+  background-image: url("assets/img/pat-seven.jpg");
+}
+
+.pat-eight-img{
+  background-image: url("assets/img/pat-eight.jpg");
+}
+
+.pat-nine-img{
+  background-image: url("assets/img/pat-nine.jpg");
+}
+
+.pat-ten-img{
+  background-image: url("assets/img/pat-ten.jpg");
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.grid-single{
+  display: grid;
+  grid-template: 1fr / 1fr ;
+}
+
+.set-layout{
+  grid-area: 1 / 1;
+}
+
+.value-changer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100vh);
+  padding: 1rem 1rem 1rem 3rem;
+  width: 25rem;
+  z-index: 100;
+  background-color: rgb(40, 40, 40);
+}
+
+.chaos-changer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100vh);
+  padding: 1rem 1rem 1rem 3rem;
+  width: 25rem;
+  z-index: 100;
+  background-color: rgb(40, 40, 40);
+}
+
+.p-head{
+  color: white;
+}
+
+.info-p{
+  color: white;
+  font-size: 2rem;
+}
+
+.input-text{
+  color: white;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.color-indicator{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.rotate-indicator{
+  width: 3.8rem;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+.fig-margin{
+  margin: 0.3rem;
+}
+
+.flex-div{
+    display: flex;
+}
+
+.extra-mar{
+  margin-top: 2rem;
+}
+
+.section-ind{
+  margin-bottom: 5rem;
+}
+
+.margin-pattern-two{
+  margin: 2.1rem 2rem 2rem 2rem;
+}

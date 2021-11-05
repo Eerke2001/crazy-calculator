@@ -1,0 +1,35 @@
+.one{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.3rem solid rgb(255, 62, 118);
+    animation: rotseven 2s infinite ease;
+}
+
+@keyframes rotseven {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.two{
+    width: 5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(43, 175, 158);
+    margin: 2rem;
+    animation: squizee 3s infinite ease;
+}
+
+@keyframes squizee {
+    0% {width: 0.5rem; transform: rotate(0deg);}
+    50% {width: 5rem;}
+    100% {width: 0.5rem; transform: rotate(-360deg);}
+}
+
+.rotate{
+    animation: rotate 6s infinite linear;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

@@ -1,0 +1,19 @@
+.one{
+    width: 3rem;
+    height: 3rem;
+    /* background-color: rgb(42, 110, 255); */
+    border: 0.3rem solid rgb(30, 241, 111);
+    border-right: none;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.two{
+    width: 2rem;
+    height: 2rem;
+    /* background-color: rgb(42, 110, 255); */
+    border: 0.3rem solid rgb(30, 241, 111);
+    border-top: none;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
